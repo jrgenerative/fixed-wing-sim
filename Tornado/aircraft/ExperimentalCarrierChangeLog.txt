@@ -1,0 +1,2 @@
+151009: removed the second wing which represented the 'ears' of the main wing with the dihedral.
+Instead added a second partition to the first wing with the appropriate dihedral (this is now possible with the current version).

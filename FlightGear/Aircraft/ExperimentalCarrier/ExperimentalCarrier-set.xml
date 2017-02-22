@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+    <sim>
+
+        <description>ExperimentalCarrier</description>
+        <aircraft-version>1.0</aircraft-version>
+        <author>Jonas Ruesch</author>
+
+        <flight-model>network</flight-model>
+
+        <startup>
+          <splash-texture>Aircraft/ExperimentalCarrier/ExperimentalCarrier-splash.png</splash-texture>
+          <splash-title>ExperimentalCarrier</splash-title>
+        </startup>
+
+        <model>
+            <path archive="y">Aircraft/ExperimentalCarrier/Models/ExperimentalCarrier.xml</path>            
+        </model>
+
+		<!--
+		Setting chase-distance-m doesn't seem to work for 'Chase View Without Yaw'
+		Seems to be a bug, also doesn't work when setting it in preferences.xml directly.
+		-->
+		<chase-distance-m type="double" archive="y">-5.0</chase-distance-m>
+
+    </sim>
+	
+</PropertyList>

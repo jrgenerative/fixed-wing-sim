@@ -1,0 +1,44 @@
+
+== How to get the Coefficient Data from an Alpha-Sweep ==
+
+If you do an alpha-sweep, you'll get an output file <name>-Cx_alpha.mat.
+Besides plotting data from this result file with the post processor option 7, sweep plots 4, you can extract the coefficient data contained in:
+results.matrix.
+
+To plot the lift coefficient, do:
+plot(results.alpha_sweep,squeeze(results.matrix(1,1,:)))
+
+Thus, lift coefficients are in results.matrix(1,1,:).
+
+See resultplot.m for other coefficients (line 386 onwards).
+
+== The results.matrix Data Structure ==
+
+First and second dimension specify which parameter.
+Third dimension are the sample values. Thus, the j-th sample entry is:
+(see also solverloop5.m line 105):
+
+results.matrix(:,:,j)=[results.CL results.CL_a results.CL_b results.CL_P results.CL_Q results.CL_R
+           results.CD results.CD_a results.CD_b results.CD_P results.CD_Q results.CD_R
+           results.CC results.CC_a results.CC_b results.CC_P results.CC_Q results.CC_R
+           results.Cl results.Cl_a results.Cl_b results.Cl_P results.Cl_Q results.Cl_R
+           results.Cm results.Cm_a results.Cm_b results.Cm_P results.Cm_Q results.Cm_R
+           results.Cn results.Cn_a results.Cn_b results.Cn_P results.Cn_Q results.Cn_R
+           results.CX results.CX_a results.CX_b results.CX_P results.CX_Q results.CX_R
+           results.CY results.CY_a results.CY_b results.CY_P results.CY_Q results.CY_R
+           results.CZ results.CZ_a results.CZ_b results.CZ_P results.CZ_Q results.CZ_R]; 
+		   
+L: Lift coefficient (relative to wind)
+D: Drag coefficient (relative to wind)
+C: Side force coefficient (relative to wind)
+X, Y, Z: force coefficients along X (along fuselage backwards), Y, and Z (upwards (in Tornado)) (in body coordinates, see also definitions.jpg)
+l: roll moment coefficient
+m: pitch moment coefficient
+n: yaw moment coefficient
+
+_<x> are derivatives of the coefficients. 
+_a: derivative by alpha (angle of attack)
+_b: derivative by beta (heading angle)
+_P: derivative by roll angular velocity
+_Q: derivative by pitch angular velocity
+_R: derivative by yaw angular velocity

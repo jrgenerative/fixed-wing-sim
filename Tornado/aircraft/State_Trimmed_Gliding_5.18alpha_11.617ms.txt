@@ -1,0 +1,7 @@
+This state has been found using the ExperimentalCarrier Matlab/Simulink model as follows:
+Run the simulation until the glider stabilizes in clean glide, then
+1) Save state for this equilibirum
+2) Extract velocity u_b (x-axis body), and w_b (z-axis body).
+3) Compute alpha (angle of attack) as arctan(w/u).
+4) Compute true airspeed as sqrt(pow(u,2) + pow(w,2)) in m/s.
+5) Create this state in Tornado with true airspeed and alpha from 3) and 4) (in degrees).

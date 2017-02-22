@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>ExperimentalCarrier.ac</path>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>ExperimentalCarrierElevator</object-name>
+        <property>surface-positions/elevator-pos-norm</property>
+        <factor>10.0</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>0.76</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.0</z-m>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+		<!-- 2 points defining a line -->
+        <!-- <axis>
+            <x1-m>0.75</x1-m>
+            <y1-m>0.0</y1-m>
+            <z1-m>0.25</z1-m>
+            <x2-m>0.75</x2-m>
+            <y2-m>0.0</y2-m>
+            <z2-m>-0.25</z2-m>
+        </axis>-->
+    </animation>
+
+	<animation>
+        <type>rotate</type>
+        <object-name>ExperimentalCarrierRudder</object-name>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>10.0</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>0.76</x-m>
+			<y-m>-0.17</y-m>
+			<z-m>0.0</z-m>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>-1.0</z>
+		</axis>
+		<!-- 2 points defining a line -->
+        <!--<axis>
+            <x1-m>0.76</x1-m>
+            <y1-m>0.0</y1-m>
+            <z1-m>0.17</z1-m>
+            <x2-m>0.76</x2-m>
+            <y2-m>0.18</y2-m>
+            <z2-m>0.17</z2-m>
+        </axis>-->
+    </animation>
+
+</PropertyList>

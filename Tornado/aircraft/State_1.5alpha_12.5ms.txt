@@ -1,0 +1,3 @@
+This state has been used to compute the coefficient matrices. 
+Although... the velocity of the state does not really affect the coefficients (as is correct, it shouldn't), however, to make sure, a realistic velocity was chosen to compute the coefficients nonetheless. 
+Alpha of course also doesn't affect the coefficients when doing alpha, beta sweeps.
