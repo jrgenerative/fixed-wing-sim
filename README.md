@@ -1,12 +1,10 @@
-# Fixed-Wing Glider Simulation and LTI Extraction
+# Fixed-Wing Glider Simulation
 
-This repository provides an example for simulating the dynamics of a fixed-wing glider with Matlab Simulink. 
+This repository provides an example of a non-linear fixed-wing glider simulation with Matlab Simulink and FlightGear using tables of aerodynamic coefficients computed with Tornado [x], an implementation of the Vortex Lattice Method. 
 
+Furthermore, the implementation also contains scripts to deduce the longitudinal and lateral linear time invariant systems (LTI) for the trimmed gliding state.
 
-* Matlab implementation to simulate the non-linear dynamics of a fixed-wing glider. 
-* Tools to extract linear time invariant (LTI) systems around equilibrium point.
-
-## Introduction
+## Overview
 
 Airframe
 Rudder actions
