@@ -1,6 +1,6 @@
 # Fixed-Wing Glider Simulation
 
-This repository provides an example of a non-linear fixed-wing glider simulation with Matlab Simulink and FlightGear using tables of aerodynamic coefficients computed with Tornado [1](#abcd)., an implementation of the Vortex Lattice Method. 
+This repository provides an example of a non-linear fixed-wing glider simulation with Matlab Simulink and FlightGear using tables of aerodynamic coefficients computed with Tornado [[1]](#tornado)., an implementation of the Vortex Lattice Method. 
 
 Furthermore, the implementation also contains scripts to deduce the longitudinal and lateral linear time invariant systems (LTI) for the trimmed gliding state.
 
@@ -39,6 +39,6 @@ Data from test flight with physical model:
 
 # References
 
-<a name="abcd"></a> test
+ test
 
-[1] http://tornado.redhammer.se/
+[1] <a name="tornado"></a> Melin Tomas, Tornado, http://tornado.redhammer.se/.
