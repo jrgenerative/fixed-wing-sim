@@ -5,7 +5,7 @@
 
 # Appendix
 
-## Notes on test flight
+## Test Flight Data
 
 Data from test flight with physical model:
 
