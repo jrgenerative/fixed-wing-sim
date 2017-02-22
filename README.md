@@ -39,6 +39,4 @@ Data from test flight with physical model:
 
 # References
 
- test
-
 [1] <a name="tornado"></a> Melin Tomas, Tornado, http://tornado.redhammer.se/.
