@@ -5,16 +5,17 @@
 
 ## Installation and Configuration
 
-* Adjust the paths to your FlightGear installation in `runFlightGear.bat` and `runFlightGear.m` in `ExperimentalCarrierSimulink/utilities/`.
+* Adjust the paths to your FlightGear installation in `runFlightGear.bat` and `runFlightGear.m` in `ExperimentalCarrierSimulink/utilities`.
+* To run `mainComputeLTI.m`, check the configuration section to make the necessary adjustments to run this script in your environment and with the desired parameters.
 
 ## Running the Simulation
 
-* Open in Matlab the Simulink project ExperimentalCarrierSimulink.prj. This opens:
-** Plant model
-** ExperimentalCarrier model
-** ExperimentalCarrier_longitudinal model
-** ExperimentalCarrier_lateral model
-** FlightGear
+1. Open in Matlab the Simulink project ExperimentalCarrierSimulink.prj. This opens:
+  * Plant model
+  * ExperimentalCarrier model
+  * ExperimentalCarrier_longitudinal model
+  * ExperimentalCarrier_lateral model
+  * FlightGear
 
 # Appendix
 
