@@ -10,7 +10,7 @@
 
 ## Running the Simulation
 
-* Open in Matlab the Simulink project ExperimentalCarrierSimulink.prj. This opens:
+1. Open in Matlab the Simulink project ExperimentalCarrierSimulink.prj. This opens:
 ..* Plant model
 ..* ExperimentalCarrier model
 ..* ExperimentalCarrier_longitudinal model
