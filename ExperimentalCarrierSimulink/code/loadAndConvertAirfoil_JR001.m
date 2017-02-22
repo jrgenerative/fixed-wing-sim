@@ -47,7 +47,7 @@ plot(upperX, upperY, 'b');
 hold off;
 
 pwd
-fileID = fopen([dirOfScript '/../airfoil/JR001_TORNADO.DAT'],'w' );
+fileID = fopen([dirOfScript '/../../airfoil/JR001_TORNADO.DAT'],'w' );
 fprintf(fileID, '%s\n', '% (JR001 Airfoil)');
 fprintf(fileID, '%s\n', '44.  44.');
 fprintf(fileID, '%s\n', '%  x/c  y/c upper'); 
