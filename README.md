@@ -11,11 +11,11 @@
 ## Running the Simulation
 
 1. Open in Matlab the Simulink project ExperimentalCarrierSimulink.prj. This opens:
-..* Plant model
-..* ExperimentalCarrier model
-..* ExperimentalCarrier_longitudinal model
-..* ExperimentalCarrier_lateral model
-..* FlightGear
+  * Plant model
+  * ExperimentalCarrier model
+  * ExperimentalCarrier_longitudinal model
+  * ExperimentalCarrier_lateral model
+  * FlightGear
 
 # Appendix
 
