@@ -1,4 +1,5 @@
-%
+% Check the configuration section to make the necessary adjustments to
+% run this script.
 
 % @
 % Copyright (C) 2017 Jonas Ruesch
