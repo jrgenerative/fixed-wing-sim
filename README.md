@@ -2,7 +2,7 @@
 
 This repository provides an example of a non-linear fixed-wing glider simulation with Matlab Simulink and FlightGear using tables of aerodynamic coefficients computed with Tornado [[1]](#tornado)., an implementation of the Vortex Lattice Method. 
 
-Furthermore, the implementation also contains scripts to deduce the longitudinal and lateral linear time invariant systems (LTI) for the trimmed gliding state.
+The implementation also contains scripts to find the trimmed gliding state and deduce longitudinal and lateral linear time invariant systems for this state.
 
 ## Overview
 
