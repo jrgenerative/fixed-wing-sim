@@ -44,20 +44,20 @@ aircraft_geometry_name = 'ExperimentalCarrier';
 centerOfGravity = 0.092; % Tornado x-axis extends aft (!).
 
 % The sweep ranges and sampling resolution for Simulink modelling
-% alphaStart = -10;
-% alphaEnd = 20;
-% numAlphas = 31;
-% betaStart = -10;
-% betaEnd = 10;
-% numBetas = 21;
-
-% Quick Test
 alphaStart = -10;
 alphaEnd = 20;
-numAlphas = 2;
+numAlphas = 31;
 betaStart = -10;
 betaEnd = 10;
-numBetas = 2;
+numBetas = 21;
+
+% % Quick Test
+% alphaStart = -10;
+% alphaEnd = 20;
+% numAlphas = 2;
+% betaStart = -10;
+% betaEnd = 10;
+% numBetas = 2;
 
 % Coefficient computation
 [alpha, beta, CX, CY, CZ, Cl, Cm, Cn, CX_d, CY_d, CZ_d, Cl_d, Cm_d, Cn_d, ...

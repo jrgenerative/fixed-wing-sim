@@ -29,7 +29,7 @@ elevatorFlapIndex = 1; % which is the elevator flap in the Tornado model?
 rudderFlapIndex = 2; % which is the rudder flap in the Tornado model?
 centerOfGravity = 0.092; % in meters from zero of Tornado aircraft model reference frame. Tornado x-axis extends aft (!) -> positive.
 mass = 1.56; % aircraft mass in kg (overwrites the value set in the Tornado model).
-InertiaTensor = [1 0 0; 0 1 0; 0 0 1]; % inertia tensor
+InertiaTensor = [1 0 0; 0 1 0; 0 0 1]; % inertia tensor (TODO: compute a realistic one :)
 % The alpha-sweep configuration
 alphaStart = 4; %2;
 alphaEnd = 6; % 6;
