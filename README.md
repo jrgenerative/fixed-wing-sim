@@ -49,6 +49,8 @@ Aerodynamic coefficient matrices are computed by calling:
 ```
 mainComputeCoefficients.m
 ```
+Results are visualized [here](#results).
+
 Input for the calculation is:
 1. a Tornado airframe definition (geometry and airfoil),
 2. center of gravity on the airframe
@@ -61,18 +63,18 @@ The computation outputs for each coefficient a 2-dimensional matrix which contai
 #### Datum Coefficients
 
 Force coefficients
-* CX: force coefficient in body-fixed longitudinal direction
-* CY: force coefficient in body-fixed lateral direction
-* CZ: force coefficient perpendicular to CX, CY (body-fixed 'lift'). 
+* ``CX``: force coefficient in body-fixed longitudinal direction
+* ``CY``: force coefficient in body-fixed lateral direction
+* ``CZ``: force coefficient perpendicular to ``CX``, ``CY`` (body-fixed 'lift'). 
 
 Moment coefficients
-* Cl: roll moment coefficient
-* Cm: pitch moment coefficient
-* Cn: yaw moment coefficient
+* ``Cl``: roll moment coefficient
+* ``Cm``: pitch moment coefficient
+* ``Cn``: yaw moment coefficient
 
 #### Damping Coefficients
 
-For each force and moment coefficient, a damping coefficient is computed. These coefficients specify how each coefficient changes when the aircraft rolls (P), pitches (Q), or yaws (R). The resulting matrices are ``CX_P``, ``CX_Q``, ``CX_R``, ``CY_P``, ``CY_Q``, ``CY_R``, ``CZ_P``, ``CZ_Q``, ``CZ_R``, ``Cl_P``, ``Cl_Q``, ``Cl_R``, ``Cm_P``, ``Cm_Q``, ``Cm_R``, ``Cn_P``, ``Cn_Q``, ``Cn_R``,   
+For each force and moment coefficient, a damping coefficient is computed. These coefficients specify how each coefficient changes when the aircraft rolls (``P``), pitches (``Q``), or yaws (``R``). The resulting matrices are ``CX_P``, ``CX_Q``, ``CX_R``, ``CY_P``, ``CY_Q``, ``CY_R``, ``CZ_P``, ``CZ_Q``, ``CZ_R``, ``Cl_P``, ``Cl_Q``, ``Cl_R``, ``Cm_P``, ``Cm_Q``, ``Cm_R``, ``Cn_P``, ``Cn_Q``, ``Cn_R``.   
 
 #### Control Surface Deflection Coefficients
 
@@ -90,7 +92,7 @@ TODO
 
 TODO
 
-## Results
+## <a name="results"></a>Results
 
 TODO
 
