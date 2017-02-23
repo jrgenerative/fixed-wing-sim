@@ -69,13 +69,13 @@ The computation outputs for each coefficient a 2-dimensional matrix which contai
 
 ##### Datum Coefficients
 
-* ``CX``: force coefficient in body-fixed longitudinal direction
-* ``CY``: force coefficient in body-fixed lateral direction
-* ``CZ``: force coefficient perpendicular to ``CX``, ``CY`` (body-fixed 'lift'). 
+* ``CX``: force coefficient in body-fixed longitudinal direction.
+* ``CY``: force coefficient in body-fixed lateral direction.
+* ``CZ``: force coefficient perpendicular to ``CX``, ``CY`` (body-fixed 'lift').
 
-* ``Cl``: roll moment coefficient
-* ``Cm``: pitch moment coefficient
-* ``Cn``: yaw moment coefficient
+* ``Cl``: roll moment coefficient.
+* ``Cm``: pitch moment coefficient.
+* ``Cn``: yaw moment coefficient.
 
 ##### Damping Coefficients
 
@@ -102,10 +102,17 @@ TODO
 ### Aerodynamic Coefficients
 
 <img src="./results/mainComputeCoefficients/1.png" width="800"> 
+Datum coefficients (forces and moments).
+
 <img src="./results/mainComputeCoefficients/2.png" width="800">
+Elevator control surface derivatives. describe how datum coefficients change when the elevator is deflected.
 
+<img src="./results/mainComputeCoefficients/3.png" width="800">
+Rudder control surface derivatives: describe how datum coefficients change when the rudder is deflected.
 
-Get some plots principal Tornado results.
+Asymmetric values appear due to the asymmetry of the vertical stabilizers (only the stabilizer on the port side carries the additional rudder control surface).
+
+For remaining coefficients, see [here](./results/mainComputeCoefficients).
 
 ## Installation and Configuration
 
