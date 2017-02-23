@@ -107,7 +107,7 @@ For each control surface, coefficient derivatives ``*_d`` are computed. They den
 
 #### Other Aerodynamic Properties
 
-Tornado can also be used to estimate the _neutral point_ of the entire airframe. The neutral point is the point on the vehicles x-axis where the aerodynamic moment ``Cm`` remains constant independently of the angle of attack. The distance between the center of gravity and the neutral point is called the _stability margin_. In a classic fixed-wing configuration, the center of gravity has to be placed before the neutral point (in flight direction). If the the stability margin approaches zero, the airplane becomes unstable. For the considered airframe, Tornado calculated the neutral point to lie at 49% MAC (mean aerodynamic chord), which is for the given wing geometry simply ``0.49*0.25``[m].
+Tornado can also be used to estimate the _neutral point_ of the entire airframe. The neutral point is the point on the vehicle's x-axis where the aerodynamic moment ``Cm`` remains constant independently of the angle of attack. The distance between the center of gravity and the neutral point is called the _stability margin_. In a classic fixed-wing configuration, the center of gravity has to be placed before the neutral point (in flight direction). If the the stability margin approaches zero, the airplane becomes unstable. For the considered airframe, Tornado calculated the neutral point to lie at 49% MAC (mean aerodynamic chord), which is for the given wing geometry simply ``0.49*0.25``[m].
 
 ### <a name="simulation"></a>Run the Non-Linear Flight Simulation
 
