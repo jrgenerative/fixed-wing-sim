@@ -82,9 +82,9 @@ Aerodynamic coefficient matrices are computed by calling:
 ```
 mainComputeCoefficients.m
 ```
-Results are visualized [here](#results).
+Results are visualized [here](#coefficient_results).
 
-Input for the calculation is
+Input for the calculation is:
 
 1. Tornado airframe definition (geometry and airfoil),
 2. center of gravity position
@@ -92,7 +92,7 @@ Input for the calculation is
 2. air density [kg/m^3]
 3. range of ``alpha`` and ``beta`` values for which coefficients shall be computed (``alpha`` denotes the angle of attack, and ``beta`` the sideslip angle). 
 
-The computation outputs for each coefficient a 2-dimensional matrix which contains the coefficients value for all specified ``[alpha, beta]`` configurations. Already computed coefficient matrices can be found [here](./ExperimentalCarrierSimulink/output). The coefficient naming convention is summarized below.
+Output is for each coefficient a 2-dimensional matrix which contains the coefficient's value for all specified ``[alpha, beta]`` configurations. Computed coefficient matrices can be found [here](./ExperimentalCarrierSimulink/output). The coefficient naming convention is summarized below.
 
 #### Aerodynamic Coefficients
 
@@ -129,11 +129,17 @@ To control the glider the elevator and rudder surface deflection can be adjusted
 
 ### <a name="lti"></a>Compute Lateral and Longitudinal Linear Systems for the Trimmed Gliding State
 
-Mention: computed in body-fixed reference frame and not as with Caughey in stability reference frame.
+To find the trimmed gliding state and calculate the lateral and longitudinal linear systems, run:
+```
+mainComputeLTIs.m
+```
+Results are shown [here](#lti_results).
+
+The resulting linear systems correspond to the ones derived in [[2]](#caughey) (see Sect. 5.2 and Sect. 5.3), except that they are defined coordinate system of the standard body-fixed reference frame and not according to the equilibrium axes.
 
 ## <a name="results"></a>Results
 
-### Aerodynamic Coefficients
+### <a name="coefficient_results"></a>Aerodynamic Coefficients
 
 <img src="./results/mainComputeCoefficients/1.png" width="900"> 
 
@@ -151,7 +157,7 @@ Asymmetric values appear due to the asymmetry of the vertical stabilizers (only 
 
 For remaining coefficients, see [here](./results/mainComputeCoefficients).
 
-### Lateral and Longitudinal Linear Systems
+### <a name="lti_results"></a>Lateral and Longitudinal Linear Systems
 
 TODO
 
