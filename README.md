@@ -7,8 +7,9 @@ In addition to existing Simulink examples from the Mathworks documentation, this
 1. Compute required aerodynamic coefficient tables using Tornado [[2]](#tornado), an implementation of the [vortex lattice method](https://en.wikipedia.org/wiki/Vortex_lattice_method). 
 2. Find the trimmed gliding state and deduce longitudinal and lateral linear time invariant systems ([LTI](https://en.wikipedia.org/wiki/Linear_time-invariant_theory)) for the trimmed state according to text book definitions such as the one given in [[3]](#caughey).
 
-<img src="./figures/FlightGear03.png" width="300">
-![Simulated](./figures/FlightGear03.png =300x)![Real Glider](./figures/Airframe02.png =300x)
+Simulation | Real Flight
+----------| ------------
+<img src="./figures/FlightGear03.png" width="350"> | <img src="./figures/Airframe02.png" width="350">
 
 ## Overview
 
