@@ -21,13 +21,12 @@ The airframe has a twin-boom fuselage and a wing with upward cranked tips. The t
 Below is the airframe as defined for the vortex lattice method computation with Tornado:
 
 
-Wing partition layout | VLM discretization
-----------| ------------
+
+---------- | ------------
 <img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="400"> | <img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="400">
 
-Airfoil
-----------
-<img src="./airfoile/JR001.png" width="600">
+
+<img src="./airfoil/JR001.png" width="600">
 
 
 ## Applications
