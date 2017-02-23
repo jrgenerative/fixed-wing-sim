@@ -22,19 +22,17 @@ Below is the airframe as defined for the vortex lattice method computation with 
 
 | Wing partition layout | 
 | -------------------|
-| <img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="400"> | 
-
+| <img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="350"> | 
 | VLM discretization |
 | -------------------|
-|<img src="./results/mainComputeCoefficients/TornadoAirframe2.png" width="400">|
-
-| Airfoil |
+|<img src="./results/mainComputeCoefficients/TornadoAirframe2.png" width="350">|
+| Airfoil JR001 |
 |-------------------------------------------|
-|<img src="./airfoil/JR001.png" width="400"> | 
-
+| A simple airfoil design with a planar pressure side and docile flight characteristics |
+|<img src="./airfoil/JR001.png" width="350"> | 
 | Example of a pressure distribution computed by Tornado |
 |-------------------------------------------|
-|<img src="./figures/pressure_distribution_visualization_tornado.png" width="400">|
+|<img src="./figures/pressure_distribution_visualization_tornado.png" width="350">|
 
 
 ## Applications
