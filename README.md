@@ -135,7 +135,7 @@ mainComputeLTIs.m
 ```
 Results are shown [here](#lti_results).
 
-The resulting linear systems correspond to the ones derived in [[2]](#caughey) (see Sect. 5.2 and Sect. 5.3), except that they are defined coordinate system of the standard body-fixed reference frame and not according to the equilibrium axes.
+The resulting linear systems correspond to the ones derived in [[2]](#caughey) (see Sect. 5.2 and Sect. 5.3), except that they are calculated for the coordinate system of the standard body-fixed reference frame and not in the reference frame of the equilibrium axes.
 
 ## <a name="results"></a>Results
 
