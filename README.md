@@ -121,7 +121,7 @@ TODO
 
 TODO
 
-Mention: computed in body-fixed reference frame and not as with Caughy in stability reference frame.
+Mention: computed in body-fixed reference frame and not as with Caughey in stability reference frame.
 
 ## <a name="results"></a>Results
 
