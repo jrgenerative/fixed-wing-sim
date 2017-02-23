@@ -53,6 +53,6 @@ Data from test flight with physical model:
 
 # References
 
-[1] <a name="flightgear"></a> [FlightGear](#http://www.flightgear.org/).
-[2] <a name="tornado"></a> Melin, Tomas. [Tornado](#http://tornado.redhammer.se/).
-[3] <a name="caughey"></a> Caughey, David A. [Introduction to Aircraft Stability and Control](#https://courses.cit.cornell.edu/mae5070/Caughey_2011_04.pdf).
+[1] <a name="flightgear"></a> [FlightGear](http://www.flightgear.org/).  
+[2] <a name="tornado"></a> Melin, Tomas. [Tornado](http://tornado.redhammer.se/).  
+[3] <a name="caughey"></a> Caughey, David A. [Introduction to Aircraft Stability and Control](https://courses.cit.cornell.edu/mae5070/Caughey_2011_04.pdf).  
