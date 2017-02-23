@@ -55,11 +55,12 @@ Further drawings related to the airframe can be found [here](./Tornado/aircraft/
 
 ## <a name="referenceframes"></a>Reference Frames
 
-When specifying forces, moments or angles in a body-fixed reference frame, the convention shown in the figure below is usually used. This is also the convention used by Matlab and in [[2]](#caughey). The Tornado implementation [[1]](#tornado) uses a slightly different reference frame, see below.
+When specifying forces, moments, or angles a body-fixed reference frame is used. The usual convention is shown in the figure below on the left. This is also the convention used by Matlab and in [[2]](#caughey). The Tornado implementation [[1]](#tornado) uses a slightly different reference frame, see below on the right.
 
 Standard Body-fixed Reference Frame | Tornado Body-fixed Reference Frame
+--------------------- | ------------------------
 <img src="./figures/standard_reference_frame.png" width="400"> | <img src="./figures/tornado_reference_frame.png" width="400">
-slfdkl | sldfkj
+Standard reference frame convention (from Caughey [[2]](#caughey)) | Reference frame used in Tornado [[1]](#tornado)
 
 * stability reference frame (caution: Caughy uses it for LTI systems).
 
