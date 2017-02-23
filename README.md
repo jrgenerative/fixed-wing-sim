@@ -31,11 +31,11 @@ Characteristics of the corresponding lateral LTI system | Characteristics of the
 
 ## <a name="installation"></a>Installation and Configuration
 
-Besides a Matlab and Simulink installation, you need to install [FlightGear](http://www.flightgear.org/) and [Tornado](http://tornado.redhammer.se/).
+Besides Matlab and Simulink, you need to install [FlightGear](http://www.flightgear.org/) and [Tornado](http://tornado.redhammer.se/).
 
 ### FlightGear Installation
 
-After installing FlightGear, you also need to install the aircraft visualization data. Assuming you installed FlightGear 3.4.0 on Windows, just copy the content of folder `FlightGear\Aircraft\ExperimentalCarrier` to `C:\Program Files\FlightGear 3.4.0\data\Aircraft\ExperimentalCarrier`. For other versions or operating systems, proceed accordingly.
+After installing FlightGear, it is necessary to copy the aircraft visualization data from your Git working copy to the FlightGear data directory. Assuming you installed FlightGear 3.4.0 on Windows, just copy the content of the working copy folder `FlightGear\Aircraft\ExperimentalCarrier` to `C:\Program Files\FlightGear 3.4.0\data\Aircraft\ExperimentalCarrier`. For other versions or operating systems, proceed accordingly.
 
 Edit the files `runFlightGear.bat` and `runFlightGear.m` in `ExperimentalCarrierSimulink/utilities` and adjust the FlightGear installation path to point to the correct location.
 
