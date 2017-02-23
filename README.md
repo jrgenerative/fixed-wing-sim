@@ -26,8 +26,9 @@ Wing partition layout | VLM discretization
 
 Airfoil JR001 | Example pressure distribution computed by Tornado 
 --------------|---------------------
-<img src="./airfoil/JR001.png" width="350"> | <img src="./figures/pressure_distribution_visualization_tornado.png" width="350">
-A simple airfoil design with a planar pressure side and docile flight characteristics |
+<img src="./airfoil/JR001.png" width="400"> | <img src="./figures/pressure_distribution_visualization_tornado.png" width="400">
+
+The airfoil JR001 features a planar pressure side which simplifies the build procedure and provides friendly in-flight characteristics. It wasn't designed with gliding performance in mind.
 
 ## Applications
 
