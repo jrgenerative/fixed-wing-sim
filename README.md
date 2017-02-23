@@ -47,7 +47,7 @@ The codebase and the provided Simulink models can be used to:
 2. Run a [non-linear flight simulation[(#simulation) using previously computed coefficient matrices.
 3. Extract the [linear time-invariant systems](#lti) for the trimmed gliding state.
 
-### <a name="coefficients"></a>Computation of Aerodynamic Coefficients
+### <a name="coefficients"></a>Compute the Aerodynamic Coefficients
 
 Aerodynamic coefficient matrices are computed by calling:
 ```
@@ -88,11 +88,11 @@ For each control surface, coefficient derivatives ``*_d`` are computed. They den
 
 Tornado can also be used to estimate the _neutral point_ of the entire airframe. The neutral point is the point on the vehicles x-axis where the aerodynamic moment ``Cm`` remains constant independently of the angle of attack. The distance between the center of gravity and the neutral point is called the _stability margin_. In a classic fixed-wing configuration, the center of gravity has to be placed before the neutral point (in flight direction). If the the stability margin approaches zero, the airplane becomes unstable. For the considered airframe, Tornado calculated the neutral point to lie at 49% MAC (mean aerodynamic chord), which is for the given wing geometry simply ``0.49*0.25``[m].
 
-### <a name="simulation"></a>Non-Linear Flight Simulation
+### <a name="simulation"></a>Run the Non-Linear Flight Simulation
 
 TODO
 
-### <a name="lti"></a>Longitudinal and Lateral LTIs for Gliding Equilibrium
+### <a name="lti"></a>Compute Longitudinal and Lateral Linear Systems for the Trimmed Gliding State
 
 TODO
 
