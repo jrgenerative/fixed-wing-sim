@@ -17,7 +17,14 @@ Lateral LTI | Longitudinal LTI
 <img src="./results/mainComputeLTIs/lateral.png" width="400"> | <img src="./results/mainComputeLTIs/longitudinal.png" width="400">
 Characteristics of the corresponding lateral LTI system | Characteristics of the corresponding longitudinal LTI system
 
-## Airframe
+## Installation and Configuration
+
+TODO
+
+* Adjust the paths to your FlightGear installation in `runFlightGear.bat` and `runFlightGear.m` in `ExperimentalCarrierSimulink/utilities`.
+* To run `mainComputeLTI.m`, check the configuration section to make the necessary adjustments to run this script in your environment and with the desired parameters.
+
+## Simulated Airframe
 
 The airframe has a twin-boom fuselage and a wing with upward cranked tips. The total wing span is 1.5m and the take-off weight is 1.56kg (actual glider equiped with on-board computer and temporarily installed electric motor for testing / take-off). Center of gravity has been found to be at 92mm from the leading edge of the main wing. Via GPS measurements a gliding velocity of about 45km/h was confirmed (at roughly zero elevator deflection). The glider uses two actuators: elevator and rudder. The rudder is asymmetrically attached to the left of the two vertical stabilizers.
 
@@ -90,6 +97,10 @@ Tornado can also be used to estimate the _neutral point_ of the entire airframe.
 
 ### <a name="simulation"></a>Run the Non-Linear Flight Simulation
 
+Open the ``ExperimentalCarrierSimulink.prj`` located [here](./ExperimentalCarrierSimulink). This will start FlightGear and open a couple of Simulink models. Select and run the ``Plant`` model. Switch to the FlightGear window and use ``v`` to change the view perspective.
+
+#### Control the glider
+
 TODO
 
 ### <a name="lti"></a>Compute Longitudinal and Lateral Linear Systems for the Trimmed Gliding State
@@ -106,33 +117,16 @@ Datum coefficients (forces and moments).
 
 <img src="./results/mainComputeCoefficients/2.png" width="800">
 
-Elevator control surface derivatives. describe how datum coefficients change when the elevator is deflected.
+Elevator control surface derivatives. Describe how datum coefficients change when the elevator is deflected.
 
 <img src="./results/mainComputeCoefficients/3.png" width="800">
 
-Rudder control surface derivatives: describe how datum coefficients change when the rudder is deflected.
+Rudder control surface derivatives. Describe how datum coefficients change when the rudder is deflected.
 
-Asymmetric values appear due to the asymmetry of the vertical stabilizers (only the stabilizer on the port side carries the additional rudder control surface).
+Asymmetric values appear due to the asymmetry of the vertical stabilizers (only the stabilizer on the port side carries the rudder control surface).
 
 For remaining coefficients, see [here](./results/mainComputeCoefficients).
 
-## Installation and Configuration
-
-TODO
-
-* Adjust the paths to your FlightGear installation in `runFlightGear.bat` and `runFlightGear.m` in `ExperimentalCarrierSimulink/utilities`.
-* To run `mainComputeLTI.m`, check the configuration section to make the necessary adjustments to run this script in your environment and with the desired parameters.
-
-## Running the Simulation
-
-TODO
-
-1. Open in Matlab the Simulink project ExperimentalCarrierSimulink.prj. This opens:
-  * Plant model
-  * ExperimentalCarrier model
-  * ExperimentalCarrier_longitudinal model
-  * ExperimentalCarrier_lateral model
-  * FlightGear
 
 # References
   
