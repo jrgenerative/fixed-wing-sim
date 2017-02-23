@@ -4,7 +4,7 @@
 
 [Overview](#overview)  
 [Installation](#installation)  
-[Simulated Airframe](#airframe)  
+[Airframe](#airframe)  
 [Reference Frames](#referenceframes)  
 [How to Run the Code](#applications)  
 [Results](#results)  
@@ -35,9 +35,9 @@ TODO
 * Adjust the paths to your FlightGear installation in `runFlightGear.bat` and `runFlightGear.m` in `ExperimentalCarrierSimulink/utilities`.
 * To run `mainComputeLTI.m`, check the configuration section to make the necessary adjustments to run this script in your environment and with the desired parameters.
 
-## <a name="airframe"></a>Simulated Airframe
+## <a name="airframe"></a>Airframe
 
-The airframe has a twin-boom fuselage and a wing with upward cranked tips. The total wing span is 1.5m and the take-off weight is 1.56kg (actual glider equiped with on-board computer and temporarily installed electric motor for testing / take-off). Center of gravity has been found to be at 92mm from the leading edge of the main wing. Via GPS measurements a gliding velocity of about 45km/h was confirmed (at roughly zero elevator deflection). The glider uses two actuators: elevator and rudder. The rudder is asymmetrically attached to the left of the two vertical stabilizers.
+The simulated airframe has a twin-boom fuselage and a wing with upward cranked tips. The total wing span is 1.5m and the take-off weight is 1.56kg (actual glider equiped with on-board computer and temporarily installed electric motor for testing / take-off). Center of gravity has been found to be at 92mm from the leading edge of the main wing. Via GPS measurements a gliding velocity of about 45km/h was confirmed (at roughly zero elevator deflection). The glider uses two actuators: elevator and rudder. The rudder is asymmetrically attached to the left of the two vertical stabilizers.
 
 Below is the airframe as defined for the vortex lattice method computation with Tornado:
 
@@ -55,9 +55,12 @@ Further drawings related to the airframe can be found [here](./Tornado/aircraft/
 
 ## <a name="referenceframes"></a>Reference Frames
 
-TODO
+When specifying forces, moments or angles in a body-fixed reference frame, the convention shown in the figure below is usually used. This is also the convention used by Matlab and in [[2]](#caughey). The Tornado implementation [[1]](#tornado) uses a slightly different reference frame, see below.
 
-* body fixed reference frames (most importantly)
+Standard Body-fixed Reference Frame | Tornado Body-fixed Reference Frame
+<img src="./figures/standard_reference_frame.png" width="400"> | <img src="./figures/tornado_reference_frame.png" width="400">
+slfdkl | sldfkj
+
 * stability reference frame (caution: Caughy uses it for LTI systems).
 
 ## <a name="applications"></a>How to Run the Code
