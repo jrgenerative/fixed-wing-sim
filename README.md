@@ -55,14 +55,18 @@ Further drawings related to the airframe can be found [here](./Tornado/aircraft/
 
 ## <a name="referenceframes"></a>Reference Frames
 
-When specifying forces, moments, or angles a body-fixed reference frame is used. The usual convention is shown in the figure below on the left. This is also the convention used by Matlab and in [[2]](#caughey). The Tornado implementation [[1]](#tornado) uses a slightly different reference frame, see below on the right.
-
+When specifying forces, moments, or angles a body-fixed reference frame is used. The usual convention is shown in the figure below on the left. This is the convention as introduced in [[2]](#caughey) and also as used in Matlab. The Tornado implementation [[1]](#tornado) uses a slightly different reference frame, see below on the right.
+ 
 Standard Body-fixed Reference Frame | Tornado Body-fixed Reference Frame
---------------------- | ------------------------
-<img src="./figures/standard_reference_frame.png" width="400"> | <img src="./figures/tornado_reference_frame.png" width="400">
-Standard reference frame convention (from Caughey [[2]](#caughey)) | Reference frame used in Tornado [[1]](#tornado)
+---------|----------
+<img src="./figures/caughey_reference_frame.png" width="400"> | <img src="./figures/tornado_reference_frame.png" width="400">
+Standard notation for forces and moments, and linear and rotational velocities in a body-fixed reference frame. The origin is located at the center of gravity (figure reproduced from [[2]](#caughey)) | Reference frame as used in the Tornado VLM implementation. The origin is located at the leading edge of the wing and the x-axis extends aft (figure reproduced from [[1]](#tornado)).
 
-* stability reference frame (caution: Caughy uses it for LTI systems).
+### Stability Axes
+
+Another reference frame which is sometimes used is a set of axes for which the x-axis is parallel to the velocity vector for an equilibrium state (e.g. trimmed gliding). Such axes are called _stability axes_. Choosing the principal axes in this way simplifies some equations when computing longitudinal and lateral linear systems from given aerodynamic coefficients (see also [[2]](#caughey) pp. 45). But since the solution implemented here, finds the corresponding LTI systems by linearizing a non-linear model around an equilibrium state, this is not really an advantage.
+
+The stability axes reference frame is not used in this implementation.
 
 ## <a name="applications"></a>How to Run the Code
 
