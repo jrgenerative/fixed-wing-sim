@@ -100,17 +100,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="247.68345"
-     inkscape:cy="419.91215"
+     inkscape:zoom="0.70000001"
+     inkscape:cx="602.7006"
+     inkscape:cy="283.06929"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="mm"
-     inkscape:window-width="1771"
-     inkscape:window-height="1056"
-     inkscape:window-x="145"
-     inkscape:window-y="-4"
+     inkscape:window-width="1424"
+     inkscape:window-height="841"
+     inkscape:window-x="104"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -430,5 +430,16 @@
        id="path4284-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="868.57147"
+       y="795.21936"
+       id="text4219"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4221"
+         x="868.57147"
+         y="795.21936">Jonas Ruesch 2017</tspan></text>
   </g>
 </svg>
