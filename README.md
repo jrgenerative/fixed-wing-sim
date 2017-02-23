@@ -111,15 +111,15 @@ TODO
 
 ### Aerodynamic Coefficients
 
-<img src="./results/mainComputeCoefficients/1.png" width="800"> 
+<img src="./results/mainComputeCoefficients/1.png" width="900"> 
 
 Datum coefficients (forces and moments).
 
-<img src="./results/mainComputeCoefficients/2.png" width="800">
+<img src="./results/mainComputeCoefficients/2.png" width="900">
 
 Elevator control surface derivatives. Describe how datum coefficients change when the elevator is deflected.
 
-<img src="./results/mainComputeCoefficients/3.png" width="800">
+<img src="./results/mainComputeCoefficients/3.png" width="900">
 
 Rudder control surface derivatives. Describe how datum coefficients change when the rudder is deflected.
 
