@@ -10,7 +10,7 @@ In addition to existing Simulink examples from the Mathworks documentation, this
 Simulation | Real Flight
 ----------| ------------
 <img src="./figures/FlightGear03.png" width="400"> | <img src="./figures/Airframe02.png" width="400">
-Visualization of the Simulink simulation with FlightGear | Test flight with real airframe
+Visualization of the Simulink simulation with FlightGear | Test flight with the real airframe
 
 Lateral LTI | Longitudinal LTI
 -----------|-------------
