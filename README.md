@@ -1,10 +1,10 @@
 # Simulation of a Fixed-Wing Unmanned Aerial Glider
 
-An example of a non-linear flight simulation for a unmanned aerial glider with a wingspan of 1.5m. The simulation is implemented with Matlab Simulink and uses FlightGear [[1]](#flightgear) for visualization purposes. 
+An example of a non-linear flight simulation for a unmanned aerial glider with a wingspan of 1.5m. The simulation is implemented with Matlab Simulink and uses FlightGear for visualization purposes [[1]](#flightgear). 
 
 In addition to existing Simulink examples from the Mathworks documentation, this implementation shows how to:
 
-1. Compute required aerodynamic coefficient tables using Tornado [[2]](#tornado), an implementation of the [vortex lattice method](https://en.wikipedia.org/wiki/Vortex_lattice_method). 
+1. Compute required aerodynamic coefficient tables using Tornado, an implementation of the [vortex lattice method](https://en.wikipedia.org/wiki/Vortex_lattice_method) [[2]](#tornado). 
 2. Find the trimmed gliding state and deduce longitudinal and lateral linear time invariant systems ([LTI](https://en.wikipedia.org/wiki/Linear_time-invariant_theory)) for the trimmed state according to text book definitions such as the one given in [[3]](#caughey).
 
 Simulation | Real Flight
