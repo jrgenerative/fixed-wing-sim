@@ -10,7 +10,10 @@ In addition to existing Simulink examples from the Mathworks documentation, this
 Simulation | Real Flight
 ----------| ------------
 <img src="./figures/FlightGear03.png" width="400"> | <img src="./figures/Airframe02.png" width="400">
-Visualization of the Simulink simulation with FlightGear | Test flight with real airframe
+Visualization of the Simulink simulation with FlightGear | Test flight with the real airframe
+
+Lateral LTI | Longitudinal LTI
+-----------|-------------
 <img src="./results/mainComputeLTIs/lateral.png" width="400"> | <img src="./results/mainComputeLTIs/longitudinal.png" width="400">
 Characteristics of the corresponding lateral LTI system | Characteristics of the corresponding longitudinal LTI system
 
@@ -20,12 +23,15 @@ The airframe has a twin-boom fuselage and a wing with upward cranked tips. The t
 
 Below is the airframe as defined for the vortex lattice method computation with Tornado:
 
-
 Wing partition layout | VLM discretization
----------- | ------------
-<img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="400"> | <img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="400">
-<img src="./airfoil/JR001.png" width="600"> | <img src="./figures/pressure_distribution_visualization_tornado.png" width="400">
+---------|----------
+ <img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="400"> | <img src="./results/mainComputeCoefficients/TornadoAirframe2.png" width="400">
 
+Airfoil JR001 | Example pressure distribution computed by Tornado 
+--------------|---------------------
+<img src="./airfoil/JR001.png" width="400"> | <img src="./figures/pressure_distribution_visualization_tornado.png" width="400">
+
+The airfoil JR001 features a planar pressure side which simplifies the build procedure and provides friendly in-flight characteristics. It wasn't designed with gliding performance in mind.
 
 ## Applications
 
