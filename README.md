@@ -38,7 +38,7 @@ Airfoil JR001 | Example pressure distribution computed by Tornado
 --------------|---------------------
 <img src="./airfoil/JR001.png" width="400"> | <img src="./figures/pressure_distribution_visualization_tornado.png" width="400">
 
-The airfoil JR001 features a planar pressure side which simplifies the build procedure and provides. The profile was designed to work well with low Reynold's numbers and to provide friendly stall characteristics. It wasn't designed with gliding performance in mind.
+The airfoil JR001 features a planar pressure side which simplifies the build procedure for the wing. The profile was designed to work well with low Reynold's numbers and to provide friendly stall characteristics. It wasn't designed with gliding performance in mind.
 
 Further drawings related to the airframe can be found [here](./Tornado/aircraft/ExperimentalCarrier.svg) and [here](./figures/StabilityAxisReferenceForTrimmedGliding.svg). The Tornado definition of the airframe is [here](./Tornado/aircraft).
 
