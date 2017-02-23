@@ -51,7 +51,7 @@ TODO
 The codebase and the provided Simulink models can be used to:
 
 1. Compute aerodynamic properties and [coefficients](#coefficients) using the Tornado VLM implementation.
-2. Run a [non-linear flight simulation[(#simulation) using previously computed coefficient matrices.
+2. Run the [non-linear flight simulation](#simulation) using previously computed coefficient matrices.
 3. Extract the [linear time-invariant systems](#lti) for the trimmed gliding state.
 
 ### <a name="coefficients"></a>Compute the Aerodynamic Coefficients
