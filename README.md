@@ -57,6 +57,9 @@ Further drawings related to the airframe can be found [here](./Tornado/aircraft/
 
 TODO
 
+* body fixed reference frames (most importantly)
+* stability reference frame (caution: Caughy uses it for LTI systems).
+
 ## <a name="applications"></a>Applications
 
 The codebase and Simulink models can be used to:
