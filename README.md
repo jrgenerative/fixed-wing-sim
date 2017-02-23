@@ -56,13 +56,31 @@ Input for the calculation is:
 2. air density [kg/m^3]
 3. a range of ``alpha`` and ``beta`` values for which to compute coefficients, where ``alpha`` denotes the angle of attack, and ``beta`` the sideslip angle. 
 
-The computation outputs for each coefficient a 2-dimensional matrix which contains the coefficients value for all specified ``[alpha, beta]`` configurations.
+The computation outputs for each coefficient a 2-dimensional matrix which contains the coefficients value for all specified ``[alpha, beta]`` configurations. The coefficient naming convention is summarized below.
 
 #### Datum Coefficients
+
+Force coefficients
+* CX: force coefficient in body-fixed longitudinal direction
+* CY: force coefficient in body-fixed lateral direction
+* CZ: force coefficient perpendicular to CX, CY (body-fixed 'lift'). 
+
+Moment coefficients
+* Cl: roll moment coefficient
+* Cm: pitch moment coefficient
+* Cn: yaw moment coefficient
 
 #### Damping Coefficients
 
 #### Actuator Deflection Coefficients
+
+For each rudder / actuator, 6 derivatives are computed:
+* CX_d: CX derivative / change in CX when deflecting rudder
+* CY_d: CY derivative / change in CY when deflecting rudder
+* CZ_d: CZ derivative / change in CZ when deflecting rudder
+* Cl_d: Cl derivative / change in Cl when deflecting rudder
+* Cm_d: Cm derivative / change in Cm when deflecting rudder
+* Cn_d: Cn derivative / change in Cn when deflecting rudder
 
 
 neutral point
