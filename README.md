@@ -53,37 +53,38 @@ Results are visualized [here](#results).
 
 Input for the calculation is
 
-1. a Tornado airframe definition (geometry and airfoil),
-2. center of gravity on the airframe
+1. Tornado airframe definition (geometry and airfoil),
+2. center of gravity position
 1. air speed [m/s]
 2. air density [kg/m^3]
-3. a range of ``alpha`` and ``beta`` values for which to compute coefficients, where ``alpha`` denotes the angle of attack, and ``beta`` the sideslip angle. 
+3. range of ``alpha`` and ``beta`` values for which coefficients shall be computed (``alpha`` denotes the angle of attack, and ``beta`` the sideslip angle). 
 
 The computation outputs for each coefficient a 2-dimensional matrix which contains the coefficients value for all specified ``[alpha, beta]`` configurations. The coefficient naming convention is summarized below.
 
-#### Datum Coefficients
+#### Aerodynamic Coefficients
 
-Force coefficients
+##### Datum Coefficients
+
 * ``CX``: force coefficient in body-fixed longitudinal direction
 * ``CY``: force coefficient in body-fixed lateral direction
 * ``CZ``: force coefficient perpendicular to ``CX``, ``CY`` (body-fixed 'lift'). 
 
-Moment coefficients
 * ``Cl``: roll moment coefficient
 * ``Cm``: pitch moment coefficient
 * ``Cn``: yaw moment coefficient
 
-#### Damping Coefficients
+##### Damping Coefficients
 
 For each force and moment coefficient, a damping coefficient is computed. These coefficients specify how each coefficient changes when the aircraft rolls (``P``), pitches (``Q``), or yaws (``R``). The resulting matrices are ``CX_P``, ``CX_Q``, ``CX_R``, ``CY_P``, ``CY_Q``, ``CY_R``, ``CZ_P``, ``CZ_Q``, ``CZ_R``, ``Cl_P``, ``Cl_Q``, ``Cl_R``, ``Cm_P``, ``Cm_Q``, ``Cm_R``, ``Cn_P``, ``Cn_Q``, ``Cn_R``.   
 
-#### Control Surface Deflection Coefficients
+##### Control Surface Deflection Coefficients
 
 For each control surface, coefficient derivatives ``*_d`` are computed. They denote how much the respective coefficient changes when the respective surface is deflected. The resulting matrices ``CX_d``, ``CY_d``, ``CZ_d``, ``Cl_d``, ``Cm_d``, ``Cn_d`` are 3-dimensional where the index of the third dimension denotes the control surface.
 
 #### Other Aerodynamic Properties
 
 neutral point
+
 
 ### Non-Linear Flight Simulation
 
