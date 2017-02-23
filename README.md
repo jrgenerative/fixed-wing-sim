@@ -72,20 +72,15 @@ Moment coefficients
 
 #### Damping Coefficients
 
-#### Actuator Deflection Coefficients
+For each force and moment coefficient, a damping coefficient is computed. These coefficients specify how each coefficient changes when the aircraft rolls (P), pitches (Q), or yaws (R). The resulting matrices are ``CX_P``, ``CX_Q``, ``CX_R``, ``CY_P``, ``CY_Q``, ``CY_R``, ``CZ_P``, ``CZ_Q``, ``CZ_R``, ``Cl_P``, ``Cl_Q``, ``Cl_R``, ``Cm_P``, ``Cm_Q``, ``Cm_R``, ``Cn_P``, ``Cn_Q``, ``Cn_R``,   
 
-For each rudder / actuator, 6 derivatives are computed:
-* CX_d: CX derivative / change in CX when deflecting rudder
-* CY_d: CY derivative / change in CY when deflecting rudder
-* CZ_d: CZ derivative / change in CZ when deflecting rudder
-* Cl_d: Cl derivative / change in Cl when deflecting rudder
-* Cm_d: Cm derivative / change in Cm when deflecting rudder
-* Cn_d: Cn derivative / change in Cn when deflecting rudder
+#### Control Surface Deflection Coefficients
 
+For each control surface, coefficient derivatives ``*_d`` are computed. They denote how much the respective coefficient changes when the respective surface is deflected. The resulting matrices ``CX_d``, ``CY_d``, ``CZ_d``, ``Cl_d``, ``Cm_d``, ``Cn_d`` are 3-dimensional where the index of the third dimension denotes the control surface.
+
+#### Other Aerodynamic Properties
 
 neutral point
-
-force, moments, damping, moments induced by rudder deflection.
 
 ### Non-Linear Flight Simulation
 
