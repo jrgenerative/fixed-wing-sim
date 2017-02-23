@@ -60,9 +60,13 @@ When specifying forces, moments, or angles a body-fixed reference frame is used.
 Standard Body-fixed Reference Frame | Tornado Body-fixed Reference Frame
 ---------|----------
 <img src="./figures/caughey_reference_frame.png" width="400"> | <img src="./figures/tornado_reference_frame.png" width="400">
-Standard notation for forces and moments, and linear and rotational velocities in a body-fixed reference frame. The origin is located at the center of gravity (from Caughey [[2]](#caughey)) | Reference frame used in Tornado [[1]](#tornado). The origin is located at the leading edge of the wing and the x-axis extends in flight direction.
+Standard notation for forces and moments, and linear and rotational velocities in a body-fixed reference frame. The origin is located at the center of gravity (figure reproduced from [[2]](#caughey)) | Reference frame as used in the Tornado VLM implementation. The origin is located at the leading edge of the wing and the x-axis extends aft (figure reproduced from [[1]](#tornado)).
 
-* stability axes (p. 46 Caughey) frame (caution: Caughy uses it for LTI systems).
+### Stability Axes
+
+Another reference frame which is sometimes used is a set of axes for which the x-axis is parallel to the velocity vector for an equilibrium state (e.g. trimmed gliding). Such axes are called _stability axes_. Choosing the principal axes in this way simplifies some equations when computing longitudinal and lateral linear systems from given aerodynamic coefficients (see also [[2]](#caughey) pp. 45). But since the solution implemented here, finds the corresponding LTI systems by linearizing a non-linear model around an equilibrium state, this is not really an advantage.
+
+The stability axes reference frame is not used in this implementation.
 
 ## <a name="applications"></a>How to Run the Code
 
