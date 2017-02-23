@@ -1,4 +1,4 @@
-# Fixed-Wing Glider Simulation
+# Simulation of a Fixed-Wing Unmanned Aerial Glider
 
 An example of a non-linear flight dynamics simulation for a unmanned aerial glider with a wingspan of 1.5m. The simulation is implemented with Matlab Simulink and uses FlightGear [[1]](#flightgear) for visualization purposes. 
 
@@ -9,27 +9,34 @@ In addition to existing Simulink examples from the Mathworks documentation, this
 
 Simulation | Real Flight
 ----------| ------------
-<img src="./figures/FlightGear03.png" width="350"> | <img src="./figures/Airframe02.png" width="350">
+<img src="./figures/FlightGear03.png" width="400"> | <img src="./figures/Airframe02.png" width="400">
+Visualization of the Simulink simulation with FlightGear | Test flight with real airframe
+<img src="./results/mainComputeLTIs/lateral.png" width="400"> | <img src="./results/mainComputeLTIs/longitudinal.png" width="400">
+Characteristics of the corresponding lateral LTI system | Characteristics of the corresponding longitudinal LTI system
 
-## Overview
+## Airframe
 
-Airframe
-Rudder actions
-Airfoil
+The airframe has a twin-boom fuselage and a wing with upward cranked tips. The total wing span is 1.5m and the take-off weight is 1.56kg (actual glider equiped with on-board computer and temporarily installed electric motor for testing / take-off). Center of gravity has been found to be at 92mm from the leading edge of the main wing. Via GPS measurements a gliding velocity of about 45km/h was confirmed (at roughly zero elevator deflection). The glider uses two actuators: elevator and rudder. The rudder is asymmetrically attached to the left of the two vertical stabilizers.
 
-### Airframe
+Below is the airframe as defined for the vortex lattice method computation with Tornado:
 
-### Tornado Setup
 
-### Simulink Models
+Wing partition layout | VLM discretization
+---------- | ------------
+<img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="400"> | <img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="400">
+<img src="./airfoil/JR001.png" width="600"> | <img src="./figures/pressure_distribution_visualization_tornado.png" width="400">
 
-### FlightGear
 
 ## Applications
 
+### Comp
 ### Non-Linear Flight Simulation
 
 ### Longitudinal and Lateral LTI of Trimmed Gliding State
+
+## Results
+
+Need some plots of Tornado on pressure distribution.
 
 ## Installation and Configuration
 
@@ -44,16 +51,6 @@ Airfoil
   * ExperimentalCarrier_longitudinal model
   * ExperimentalCarrier_lateral model
   * FlightGear
-
-# Appendix
-
-## Test Flight Data
-
-Data from test flight with physical model:
-
-* Center of gravity: 92mm from leading edge of the wing.
-* Weight: fully equipped with on-board computer (Tinkerforge) and 3-cell li-po and MVVS electric motor -> 1.56 kg
-* Average velocity measured with GPS: ~45km/h.
 
 # References
 
