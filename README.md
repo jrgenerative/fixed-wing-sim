@@ -60,9 +60,7 @@ When specifying forces, moments, or angles a body-fixed reference frame is used.
 Standard Body-fixed Reference Frame | Tornado Body-fixed Reference Frame
 ---------|----------
 <img src="./figures/caughey_reference_frame.png" width="400"> | <img src="./figures/tornado_reference_frame.png" width="400">
-Standard notation for forces and moments, and linear and rotational velocities in a body-fixed reference frame. | Reference frame used in Tornado [[1]](#tornado)
-
-Standard notation for forces and moments, and linear and rotational velocities in a body-fixed reference frame. Origin is at the center of gravity (from Caughey [[2]](#caughey))
+Standard notation for forces and moments, and linear and rotational velocities in a body-fixed reference frame. The origin is located at the center of gravity (from Caughey [[2]](#caughey)) | Reference frame used in Tornado [[1]](#tornado). The origin is located at the leading edge of the wing and the x-axis extends in flight direction.
 
 * stability axes (p. 46 Caughey) frame (caution: Caughy uses it for LTI systems).
 
