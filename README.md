@@ -4,7 +4,7 @@ An example of a non-linear flight simulation for a unmanned aerial glider with a
 
 In addition to existing Simulink examples from the Mathworks documentation, this implementation shows how to:
 
-1. Compute the required aerodynamic coefficient tables using [Tornado](http://tornado.redhammer.se/) an implementation of the [vortex lattice method](https://en.wikipedia.org/wiki/Vortex_lattice_method). For more information on the Tornado implementation, see also [[1]](#tornado). 
+1. Compute the required aerodynamic coefficient tables using [Tornado](http://tornado.redhammer.se/) an implementation of the [vortex lattice method](https://en.wikipedia.org/wiki/Vortex_lattice_method) (VLM). For more information on the Tornado implementation, see also [[1]](#tornado). 
 2. Find the trimmed gliding state and deduce longitudinal and lateral linear time invariant systems ([LTI](https://en.wikipedia.org/wiki/Linear_time-invariant_theory)) for the trimmed state according to text book definitions such as the one described in [[2]](#caughey).
 
 Simulation | Real Flight
@@ -37,17 +37,23 @@ Further drawings related to the airframe can be found [here](./Tornado/aircraft/
 
 ## Applications
 
-TODO
+The codebase and the provided Simulink models can be used to:
+
+1. Compute aerodynamic properties and coefficients using the Tornado VLM implementation.
+2. Run a non-linear flight simulation using previously computed coefficient matrices.
+3. Extract the linear time-invariant systems for the trimmed gliding state.
 
 ### Computation of Aerodynamic Coefficients
 
-TODO
+neutral point
+
+force, moments, damping, moments induced by rudder deflection.
 
 ### Non-Linear Flight Simulation
 
 TODO
 
-### Longitudinal and Lateral LTI for Trimmed Gliding
+### Longitudinal and Lateral LTIs for Gliding Equilibrium
 
 TODO
 
