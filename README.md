@@ -35,6 +35,10 @@ The airfoil JR001 features a planar pressure side which simplifies the build pro
 
 Further drawings related to the airframe can be found [here](./Tornado/aircraft/ExperimentalCarrier.svg) and [here](./figures/StabilityAxisReferenceForTrimmedGliding.svg). The Tornado definition of the airframe is [here](./Tornado/aircraft).
 
+## Reference Frames
+
+TODO
+
 ## Applications
 
 The codebase and the provided Simulink models can be used to:
@@ -83,8 +87,7 @@ For each control surface, coefficient derivatives ``*_d`` are computed. They den
 
 #### Other Aerodynamic Properties
 
-neutral point
-
+Tornado can also be used to estimate the _neutral point_ of the entire airframe. The neutral point es the point where aerodynamic moments remain constant independently of the angle of attack and sideslip angle. In a classic fixed-wing configuration, the center of gravity has to be placed in flight direction before the neutral point. The distance between center of gravity and neutral point is called the _stability margin_. If the the stability margin approaches zero, the airplane becomes unstable. For the considered airframe, Tornado calculated the neutral point to lie at 49% MAC (mean aerodynamic chord), which is for this airframe simply ``0.49*0.25``[m].
 
 ### Non-Linear Flight Simulation
 
