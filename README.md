@@ -11,6 +11,7 @@
 [References](#references)  
 
 ## <a name="overview"></a> Overview
+
 An example of a non-linear flight simulation for a unmanned aerial glider with a wingspan of 1.5m. The simulation is implemented with Matlab Simulink and uses [FlightGear](http://www.flightgear.org) for visualization purposes. 
 
 In addition to existing Simulink examples from the Mathworks documentation, this implementation shows how to:
@@ -159,7 +160,119 @@ For remaining coefficients, see [here](./results/mainComputeCoefficients).
 
 ### <a name="lti_results"></a>Lateral and Longitudinal Linear Systems
 
-TODO
+Output of `mainComputeLTIs.m`:
+```
+alpha 5.2286 deg, beta 1 deg
+ 
+Searching for trimmed operating point of lateral dynamics...
+Number of iterations: 3
+Operating point specifications were successfully met.
+ 
+Trimmed lateral state: 
+============================
+1) v     : velocity in y-body           (m/s): -0.0069615
+2) p     : rotation velocity x-body   (deg/s): 0.0014094
+3) phi   : euler roll angle             (deg): -1.5419
+4) r     : rotation velocity z-body    deg/s): -0.022565
+ 
+Other parameters in trimmed lateral state: 
+================================================
+Beta     : sideslip                        (deg): -0.034558
+Absolute velocity (longitudinal & lateral) (m/s): 11.5901
+ 
+Short Period Mode Properties (longitudinal): 
+                                                 Pole 1      Pole 2
+==============================================================================
+Damping ratio                                 : 1  1
+Undampted, natural frequency             (1/s): 6.8464      4.8203
+Period                                     (s): Inf  Inf
+Num. cycles to damp to half the amplitude     : 0  0
+ 
+Phugoid Mode Properties (longitudinal): 
+                                                 Pole 1      Pole 2
+==============================================================================
+Damping ratio                                 : 0.10757     0.10757
+Undampted, natural frequency             (1/s): 0.43627     0.43627
+Period                                     (s): 14.4863      14.4863
+Num. cycles to damp to half the amplitude     : 1.0196      1.0196
+ 
+Roll Mode Properties (lateral): 
+                                                 Pole 1
+==============================================================================
+Damping ratio                                 : 1
+Undampted, natural frequency             (1/s): 2.1251
+Period                                     (s): Inf
+Num. cycles to damp to half the amplitude     : 0
+ 
+Spiral Mode Properties (lateral): 
+                                                 Pole 1
+==============================================================================
+Damping ratio                                 : 1
+Undampted, natural frequency             (1/s): 0.1132
+Period                                     (s): Inf
+Num. cycles to damp to half the amplitude     : 0
+ 
+Dutch Roll Mode Properties (lateral): 
+                                                 Pole 1      Pole 2
+==============================================================================
+Damping ratio                                 : 0.018588    0.018588
+Undampted, natural frequency             (1/s): 2.3622      2.3622
+Period                                     (s): 2.6603      2.6603
+Num. cycles to damp to half the amplitude     : 5.9339      5.9339
+ 
+Number of unobservable states (longitudinal)  : 0
+Number of unobservable states (lateral)       : 0
+ 
+Number of uncontrollable states (longitudinal): 0
+Number of uncontrollable states (lateral)     : 0
+
+```
+
+Longitudinal system:
+```
+ltiLongitudinal =
+ 
+  a = 
+
+         0.004876         1.101        -1.056        -9.759
+           -1.009        -7.448         2.742       -0.6098
+           0.0347       -0.3791        -4.318             0
+                0             0             1             0
+ 
+  b = 
+                
+                0
+            10.21
+           -9.064
+                0
+```
+
+Lateral system:
+```
+ltiLateral =
+ 
+  a = 
+
+          -0.7838        0.6121         9.755        -11.15
+          -0.7469        -1.227             0        0.1967
+                0             1    -3.794e-05       0.06246
+           0.3551      -0.02095             0       -0.3154
+ 
+  b = 
+
+           -2.526
+                0
+                0
+           -2.519
+```
+
+<img src="./results/mainComputeLTIs/longitudinal.png" width="800">
+
+Short period and phugoid modes (poles) of the longitudinal system. Dirac and step response to elevator deflection. A negative pitch moment curve for increasing alpha values (angle of attack) confirms the glider's positive stability margin.
+
+<img src="./results/mainComputeLTIs/lateral.png" width="800"> | 
+
+Spiral, rolling, and dutch role modes (poles) of the lateral system. Dirac and step response to rudder deflection. 
 
 # <a name="references"></a>References
   
