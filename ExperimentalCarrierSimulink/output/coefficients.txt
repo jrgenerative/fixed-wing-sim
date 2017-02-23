@@ -1,1 +1,3 @@
-Is the output from running mainComputeCoefficients.m
+coefficients.mat contains results from:
+* mainComputeCoefficients.m , and
+* mainComputeLTIs.m
