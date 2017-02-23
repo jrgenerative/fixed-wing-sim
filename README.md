@@ -45,6 +45,26 @@ The codebase and the provided Simulink models can be used to:
 
 ### Computation of Aerodynamic Coefficients
 
+Aerodynamic coefficient matrices are computed by calling:
+```
+mainComputeCoefficients.m
+```
+Input for the calculation is:
+1. a Tornado airframe definition (geometry and airfoil),
+2. center of gravity on the airframe
+1. air speed [m/s]
+2. air density [kg/m^3]
+3. a range of ``alpha`` and ``beta`` values for which to compute coefficients, where ``alpha`` denotes the angle of attack, and ``beta`` the sideslip angle. 
+
+The computation outputs for each coefficient a 2-dimensional matrix which contains the coefficients value for all specified ``[alpha, beta]`` configurations.
+
+#### Datum Coefficients
+
+#### Damping Coefficients
+
+#### Actuator Deflection Coefficients
+
+
 neutral point
 
 force, moments, damping, moments induced by rudder deflection.
