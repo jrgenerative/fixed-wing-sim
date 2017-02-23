@@ -20,8 +20,12 @@ The airframe has a twin-boom fuselage and a wing with upward cranked tips. The t
 
 Below is the airframe as defined for the vortex lattice method computation with Tornado:
 
+------------ | ---------------------
+<img src="./airfoil/JR001.png" width="400"> | <img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="400">
+
 ## Applications
 
+### Comp
 ### Non-Linear Flight Simulation
 
 ### Longitudinal and Lateral LTI of Trimmed Gliding State
