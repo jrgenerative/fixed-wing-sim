@@ -60,9 +60,9 @@ When specifying forces, moments, or angles a body-fixed reference frame is used.
 Standard Body-fixed Reference Frame | Tornado Body-fixed Reference Frame
 --------------------- | ------------------------
 <img src="./figures/standard_reference_frame.png" width="400"> | <img src="./figures/tornado_reference_frame.png" width="400">
-Standard reference frame convention (from Caughey [[2]](#caughey)) | Reference frame used in Tornado [[1]](#tornado)
+Standard notation for forces and moments, and linear and rotational velocities in a body-fixed reference frame. Origin is at the center of gravity (from Caughey [[2]](#caughey)) | Reference frame used in Tornado [[1]](#tornado)
 
-* stability reference frame (caution: Caughy uses it for LTI systems).
+* stability axes (p. 46 Caughey) frame (caution: Caughy uses it for LTI systems).
 
 ## <a name="applications"></a>How to Run the Code
 
