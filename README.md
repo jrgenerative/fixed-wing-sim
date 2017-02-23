@@ -56,13 +56,9 @@ Further drawings related to the airframe can be found [here](./Tornado/aircraft/
 ## <a name="referenceframes"></a>Reference Frames
 
 When specifying forces, moments, or angles a body-fixed reference frame is used. The usual convention is shown in the figure below on the left. This is the convention as introduced in [[2]](#caughey) and also as used in Matlab. The Tornado implementation [[1]](#tornado) uses a slightly different reference frame, see below on the right.
-
-Wing partition layout | VLM discretization
----------|----------
- <img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="400"> | <img src="./results/mainComputeCoefficients/TornadoAirframe2.png" width="400">
  
 Standard Body-fixed Reference Frame | Tornado Body-fixed Reference Frame
----------------------|------------------------
+---------|----------
 <img src="./figures/caughey_reference_frame.png" width="400"> | <img src="./figures/tornado_reference_frame.png" width="400">
 sdf | Reference frame used in Tornado [[1]](#tornado)
 
