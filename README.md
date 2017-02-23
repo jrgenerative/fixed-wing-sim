@@ -266,11 +266,11 @@ ltiLateral =
            -2.519
 ```
 
-<img src="./results/mainComputeLTIs/longitudinal.png" width="800">
+<img src="./results/mainComputeLTIs/longitudinal.png" width="900">
 
 Short period and phugoid modes (poles) of the longitudinal system. Dirac and step response to elevator deflection. A negative pitch moment curve for increasing alpha values (angle of attack) confirms the glider's positive stability margin.
 
-<img src="./results/mainComputeLTIs/lateral.png" width="800"> | 
+<img src="./results/mainComputeLTIs/lateral.png" width="900"> 
 
 Spiral, rolling, and dutch role modes (poles) of the lateral system. Dirac and step response to rudder deflection. 
 
