@@ -101,7 +101,8 @@ TODO
 
 ### Aerodynamic Coefficients
 
- <img src="./results/mainComputeCoefficients/1.png" width="400"> | <img src="./results/mainComputeCoefficients/2.png" width="400">
+<img src="./results/mainComputeCoefficients/1.png" width="800"> 
+<img src="./results/mainComputeCoefficients/2.png" width="800">
 
 
 Get some plots principal Tornado results.
