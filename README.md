@@ -55,12 +55,18 @@ Further drawings related to the airframe can be found [here](./Tornado/aircraft/
 
 ## <a name="referenceframes"></a>Reference Frames
 
-When specifying forces, moments, or angles a body-fixed reference frame is used. The usual convention is shown in the figure below on the left. This is also the convention used by Matlab and in [[2]](#caughey). The Tornado implementation [[1]](#tornado) uses a slightly different reference frame, see below on the right.
+When specifying forces, moments, or angles a body-fixed reference frame is used. The usual convention is shown in the figure below on the left. This is the convention as introduced in [[2]](#caughey) and also as used in Matlab. The Tornado implementation [[1]](#tornado) uses a slightly different reference frame, see below on the right.
 
+Wing partition layout | VLM discretization
+---------|----------
+ <img src="./results/mainComputeCoefficients/TornadoAirframe1.png" width="400"> | <img src="./results/mainComputeCoefficients/TornadoAirframe2.png" width="400">
+ 
 Standard Body-fixed Reference Frame | Tornado Body-fixed Reference Frame
 ---------------------|------------------------
 <img src="./figures/caughey_reference_frame.png" width="400"> | <img src="./figures/tornado_reference_frame.png" width="400">
-Standard notation for forces and moments, and linear and rotational velocities in a body-fixed reference frame. Origin is at the center of gravity (from Caughey [[2]](#caughey)) | Reference frame used in Tornado [[1]](#tornado)
+sdf | Reference frame used in Tornado [[1]](#tornado)
+
+Standard notation for forces and moments, and linear and rotational velocities in a body-fixed reference frame. Origin is at the center of gravity (from Caughey [[2]](#caughey))
 
 * stability axes (p. 46 Caughey) frame (caution: Caughy uses it for LTI systems).
 
