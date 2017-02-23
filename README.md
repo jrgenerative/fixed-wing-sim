@@ -37,21 +37,36 @@ Further drawings can be found [here](./Tornado/aircraft/ExperimentalCarrier.svg)
 
 ## Applications
 
-### Comp
+TODO
+
+### Computation of Aerodynamic Coefficients
+
+TODO
+
 ### Non-Linear Flight Simulation
 
-### Longitudinal and Lateral LTI of Trimmed Gliding State
+TODO
+
+### Longitudinal and Lateral LTI for Trimmed Gliding
+
+TODO
 
 ## Results
 
-Need some plots of Tornado on pressure distribution.
+TODO
+
+Get some plots principal Tornado results.
 
 ## Installation and Configuration
+
+TODO
 
 * Adjust the paths to your FlightGear installation in `runFlightGear.bat` and `runFlightGear.m` in `ExperimentalCarrierSimulink/utilities`.
 * To run `mainComputeLTI.m`, check the configuration section to make the necessary adjustments to run this script in your environment and with the desired parameters.
 
 ## Running the Simulation
+
+TODO
 
 1. Open in Matlab the Simulink project ExperimentalCarrierSimulink.prj. This opens:
   * Plant model
