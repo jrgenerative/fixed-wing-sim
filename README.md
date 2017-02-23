@@ -4,7 +4,7 @@ An example of a non-linear flight simulation for a unmanned aerial glider with a
 
 In addition to existing Simulink examples from the Mathworks documentation, this implementation shows how to:
 
-1. Compute required aerodynamic coefficient tables using [Tornado](http://tornado.redhammer.se/), an implementation of the [vortex lattice method](https://en.wikipedia.org/wiki/Vortex_lattice_method), see also [[1]](#tornado). 
+1. Compute the required aerodynamic coefficient tables using [Tornado](http://tornado.redhammer.se/) an implementation of the [vortex lattice method](https://en.wikipedia.org/wiki/Vortex_lattice_method). For more information on the Tornado implementation, see also [[1]](#tornado). 
 2. Find the trimmed gliding state and deduce longitudinal and lateral linear time invariant systems ([LTI](https://en.wikipedia.org/wiki/Linear_time-invariant_theory)) for the trimmed state according to text book definitions such as the one described in [[2]](#caughey).
 
 Simulation | Real Flight
@@ -77,5 +77,5 @@ TODO
 
 # References
   
-[1] <a name="melin"></a> Melin, Tomas. [Tornado, a vortex lattice MATLAB implementation for Linear Aerodynamic Wing applications](https://www.researchgate.net/profile/Tomas_Melin/publication/238671899_A_Vortex_Lattice_MATLAB_Implementation_for_Linear_Aerodynamic_Wing_Applications/links/0deec5302051604432000000.pdf), Masters thesis, Royal Institute of Technology (KTH),Sweden, December 2000.
+[1] <a name="melin"></a> Melin, Tomas. [Tornado, a vortex lattice MATLAB implementation for Linear Aerodynamic Wing applications](https://www.researchgate.net/profile/Tomas_Melin/publication/238671899_A_Vortex_Lattice_MATLAB_Implementation_for_Linear_Aerodynamic_Wing_Applications/links/0deec5302051604432000000.pdf), Masters thesis, Royal Institute of Technology (KTH),Sweden, December 2000.  
 [2] <a name="caughey"></a> Caughey, David A. [Introduction to Aircraft Stability and Control](https://courses.cit.cornell.edu/mae5070/Caughey_2011_04.pdf).  
