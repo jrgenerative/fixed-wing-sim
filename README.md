@@ -123,11 +123,11 @@ Open the ``ExperimentalCarrierSimulink.prj`` located [here](./ExperimentalCarrie
 
 #### Control the glider
 
-TODO
+To control the glider the elevator and rudder surface deflection can be adjusted with two sliders as shown below.
+
+<img src="./figures/plant.png" width="800"> 
 
 ### <a name="lti"></a>Compute Lateral and Longitudinal Linear Systems for the Trimmed Gliding State
-
-TODO
 
 Mention: computed in body-fixed reference frame and not as with Caughey in stability reference frame.
 
