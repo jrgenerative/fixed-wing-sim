@@ -43,11 +43,11 @@ TODO
 
 The codebase and the provided Simulink models can be used to:
 
-1. Compute aerodynamic properties and coefficients using the Tornado VLM implementation.
-2. Run a non-linear flight simulation using previously computed coefficient matrices.
-3. Extract the linear time-invariant systems for the trimmed gliding state.
+1. Compute aerodynamic properties and [coefficients](#coefficients) using the Tornado VLM implementation.
+2. Run a [non-linear flight simulation[(#simulation) using previously computed coefficient matrices.
+3. Extract the [linear time-invariant systems](#lti) for the trimmed gliding state.
 
-### Computation of Aerodynamic Coefficients
+### <a name="coefficients"></a>Computation of Aerodynamic Coefficients
 
 Aerodynamic coefficient matrices are computed by calling:
 ```
@@ -63,7 +63,7 @@ Input for the calculation is
 2. air density [kg/m^3]
 3. range of ``alpha`` and ``beta`` values for which coefficients shall be computed (``alpha`` denotes the angle of attack, and ``beta`` the sideslip angle). 
 
-The computation outputs for each coefficient a 2-dimensional matrix which contains the coefficients value for all specified ``[alpha, beta]`` configurations. The coefficient naming convention is summarized below.
+The computation outputs for each coefficient a 2-dimensional matrix which contains the coefficients value for all specified ``[alpha, beta]`` configurations. Already computed coefficient matrices can be found [here](./ExperimentalCarrierSimulink/output). The coefficient naming convention is summarized below.
 
 #### Aerodynamic Coefficients
 
@@ -72,7 +72,6 @@ The computation outputs for each coefficient a 2-dimensional matrix which contai
 * ``CX``: force coefficient in body-fixed longitudinal direction.
 * ``CY``: force coefficient in body-fixed lateral direction.
 * ``CZ``: force coefficient perpendicular to ``CX``, ``CY`` (body-fixed 'lift').
-
 * ``Cl``: roll moment coefficient.
 * ``Cm``: pitch moment coefficient.
 * ``Cn``: yaw moment coefficient.
@@ -89,11 +88,11 @@ For each control surface, coefficient derivatives ``*_d`` are computed. They den
 
 Tornado can also be used to estimate the _neutral point_ of the entire airframe. The neutral point is the point on the vehicles x-axis where the aerodynamic moment ``Cm`` remains constant independently of the angle of attack. The distance between the center of gravity and the neutral point is called the _stability margin_. In a classic fixed-wing configuration, the center of gravity has to be placed before the neutral point (in flight direction). If the the stability margin approaches zero, the airplane becomes unstable. For the considered airframe, Tornado calculated the neutral point to lie at 49% MAC (mean aerodynamic chord), which is for the given wing geometry simply ``0.49*0.25``[m].
 
-### Non-Linear Flight Simulation
+### <a name="simulation"></a>Non-Linear Flight Simulation
 
 TODO
 
-### Longitudinal and Lateral LTIs for Gliding Equilibrium
+### <a name="lti"></a>Longitudinal and Lateral LTIs for Gliding Equilibrium
 
 TODO
 
@@ -102,12 +101,15 @@ TODO
 ### Aerodynamic Coefficients
 
 <img src="./results/mainComputeCoefficients/1.png" width="800"> 
+
 Datum coefficients (forces and moments).
 
 <img src="./results/mainComputeCoefficients/2.png" width="800">
+
 Elevator control surface derivatives. describe how datum coefficients change when the elevator is deflected.
 
 <img src="./results/mainComputeCoefficients/3.png" width="800">
+
 Rudder control surface derivatives: describe how datum coefficients change when the rudder is deflected.
 
 Asymmetric values appear due to the asymmetry of the vertical stabilizers (only the stabilizer on the port side carries the additional rudder control surface).
