@@ -1,6 +1,6 @@
 # Simulation of a Fixed-Wing Unmanned Aerial Glider
 
-An example of a non-linear flight dynamics simulation for a unmanned aerial glider with a wingspan of 1.5m. The simulation is implemented with Matlab Simulink and uses FlightGear [[1]](#flightgear) for visualization purposes. 
+An example of a non-linear flight simulation for a unmanned aerial glider with a wingspan of 1.5m. The simulation is implemented with Matlab Simulink and uses FlightGear [[1]](#flightgear) for visualization purposes. 
 
 In addition to existing Simulink examples from the Mathworks documentation, this implementation shows how to:
 
