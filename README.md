@@ -9,7 +9,7 @@ In addition to existing Simulink examples from the Mathworks documentation, this
 
 Simulation | Real Flight
 ----------| ------------
-<img src="./figures/FlightGear03.png" width="350"> | <img src="./figures/Airframe02.png" width="350">
+<img src="./figures/FlightGear03.png" width="400"> | <img src="./figures/Airframe02.png" width="400">
 
 ## Overview
 
