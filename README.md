@@ -31,10 +31,22 @@ Characteristics of the corresponding lateral LTI system | Characteristics of the
 
 ## <a name="installation"></a>Installation and Configuration
 
-TODO
+Besides a Matlab and Simulink installation, you need to install [FlightGear](http://www.flightgear.org/) and [Tornado](http://tornado.redhammer.se/).
 
-* Adjust the paths to your FlightGear installation in `runFlightGear.bat` and `runFlightGear.m` in `ExperimentalCarrierSimulink/utilities`.
-* To run `mainComputeLTI.m`, check the configuration section to make the necessary adjustments to run this script in your environment and with the desired parameters.
+### FlightGear Installation
+
+After installing FlightGear, you also need to install the aircraft visualization data. Assuming you installed FlightGear 3.4.0 on Windows, just copy the content of folder `FlightGear\Aircraft\ExperimentalCarrier` to `C:\Program Files\FlightGear 3.4.0\data\Aircraft\ExperimentalCarrier`. For other versions or operating systems, proceed accordingly.
+
+Edit the files `runFlightGear.bat` and `runFlightGear.m` in `ExperimentalCarrierSimulink/utilities` and adjust the FlightGear installation path to point to the correct location.
+
+### Tornado Installation
+
+Assuming you have installed Tornado under `C:\tornado\T135_export`. Edit `mainComputeCoefficients.m` and `mainComputeLTIs.m` in `ExperimentalCarrierSimulink/code` and adjust the `tornado_root_directory` variable definition to point to the Tornado root directory, e.g.:
+```
+tornado_root_directory = 'C:\tornado\T135_export';
+```
+
+You can now run the simulation. Jump [here](#applications) to see how, or continue reading to learn about the airframe and the relevant reference frames first.
 
 ## <a name="airframe"></a>Airframe
 
