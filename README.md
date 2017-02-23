@@ -51,7 +51,8 @@ mainComputeCoefficients.m
 ```
 Results are visualized [here](#results).
 
-Input for the calculation is:
+Input for the calculation is
+
 1. a Tornado airframe definition (geometry and airfoil),
 2. center of gravity on the airframe
 1. air speed [m/s]
