@@ -117,9 +117,11 @@ Open the ``ExperimentalCarrierSimulink.prj`` located [here](./ExperimentalCarrie
 
 TODO
 
-### <a name="lti"></a>Compute Longitudinal and Lateral Linear Systems for the Trimmed Gliding State
+### <a name="lti"></a>Compute Lateral and Longitudinal Linear Systems for the Trimmed Gliding State
 
 TODO
+
+Mention: computed in body-fixed reference frame and not as with Caughy in stability reference frame.
 
 ## <a name="results"></a>Results
 
@@ -141,6 +143,9 @@ Asymmetric values appear due to the asymmetry of the vertical stabilizers (only 
 
 For remaining coefficients, see [here](./results/mainComputeCoefficients).
 
+### Lateral and Longitudinal Linear Systems
+
+TODO
 
 # <a name="references"></a>References
   
