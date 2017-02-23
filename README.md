@@ -6,7 +6,7 @@
 [Installation](#installation)  
 [Simulated Airframe](#airframe)  
 [Reference Frames](#referenceframes)  
-[Applications](#applications)  
+[How to Run the Code](#applications)  
 [Results](#results)  
 [References](#references)  
 
@@ -60,9 +60,9 @@ TODO
 * body fixed reference frames (most importantly)
 * stability reference frame (caution: Caughy uses it for LTI systems).
 
-## <a name="applications"></a>Applications
+## <a name="applications"></a>How to Run the Code
 
-The codebase and Simulink models can be used to:
+The codebase and the Simulink models can be used to:
 
 1. Compute aerodynamic properties and [coefficients](#coefficients) using the Tornado VLM implementation.
 2. Run the [non-linear flight simulation](#simulation) using previously computed coefficient matrices.
