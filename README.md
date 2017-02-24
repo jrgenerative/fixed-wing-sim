@@ -16,8 +16,8 @@ An example of a non-linear flight simulation for a unmanned aerial glider with a
 
 In addition to existing Simulink examples from the Mathworks documentation, this implementation shows how to:
 
-1. Compute the required aerodynamic coefficient tables using [Tornado](http://tornado.redhammer.se/) an implementation of the [vortex lattice method](https://en.wikipedia.org/wiki/Vortex_lattice_method) (VLM). For more information on the Tornado implementation, see also [[1]](#tornado). 
-2. Find the trimmed gliding state and deduce longitudinal and lateral linear time invariant systems ([LTI](https://en.wikipedia.org/wiki/Linear_time-invariant_theory)) for the trimmed state according to text book definitions such as the one described in [[2]](#caughey).
+1. [Compute the required aerodynamic coefficient tables](./ExperimentalCarrierSimulink/code/mainComputeCoefficients.m) using [Tornado](http://tornado.redhammer.se/) an implementation of the [vortex lattice method](https://en.wikipedia.org/wiki/Vortex_lattice_method) (VLM). For more information on the Tornado implementation, see also [[1]](#tornado). 
+2. [Find the trimmed gliding state and deduce longitudinal and lateral linear time invariant systems](./ExperimentalCarrierSimulink/code/mainComputeLTIs.m) ([LTI](https://en.wikipedia.org/wiki/Linear_time-invariant_theory)) for the trimmed state according to text book definitions such as the one described in [[2]](#caughey).
 
 Simulation | Real Flight
 ----------| ------------
@@ -41,7 +41,7 @@ Edit the files `runFlightGear.bat` and `runFlightGear.m` in `ExperimentalCarrier
 
 ### Tornado Installation
 
-Assuming you have installed Tornado under `C:\tornado\T135_export`. Edit `mainComputeCoefficients.m` and `mainComputeLTIs.m` in `ExperimentalCarrierSimulink/code` and adjust the `tornado_root_directory` variable definition to point to the Tornado root directory, e.g.:
+Assuming you have installed Tornado under `C:\tornado\T135_export`. Edit [`mainComputeCoefficients.m`](./ExperimentalCarrierSimulink/code/mainComputeCoefficients.m) and [`mainComputeLTIs.m`](./ExperimentalCarrierSimulink/code/mainComputeLTIs.m) in `ExperimentalCarrierSimulink/code` and adjust the `tornado_root_directory` variable definition to point to the Tornado root directory, e.g.:
 ```
 tornado_root_directory = 'C:\tornado\T135_export';
 ```
@@ -91,7 +91,7 @@ The codebase and the Simulink models can be used to:
 
 ### <a name="coefficients"></a>Compute the Aerodynamic Coefficients
 
-Aerodynamic coefficient matrices are computed by calling:
+Aerodynamic coefficient matrices are computed by calling the [script](./ExperimentalCarrierSimulink/code/mainComputeCoefficients.m):
 ```
 mainComputeCoefficients.m
 ```
@@ -142,7 +142,7 @@ To control the glider the elevator and rudder surface deflection can be adjusted
 
 ### <a name="lti"></a>Compute Lateral and Longitudinal Linear Systems for the Trimmed Gliding State
 
-To find the trimmed gliding state and calculate the lateral and longitudinal linear systems, run:
+To find the trimmed gliding state and calculate the lateral and longitudinal linear systems, run the [script](./ExperimentalCarrierSimulink/code/mainComputeLTIs.m):
 ```
 mainComputeLTIs.m
 ```
