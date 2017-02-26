@@ -41,11 +41,24 @@ Edit the files `runFlightGear.bat` and `runFlightGear.m` in `ExperimentalCarrier
 
 ### Tornado Installation
 
+Download Tornado [here](http://tornado.redhammer.se/index.php/download) and unzip it anywhere convenient, for example to `C:\tornado\T135_export`.
+
+#### Install the Airframe and Airfoil Definitions
+
+To install the airframe definition, copy [ExperimentalCarrier.mat](./Tornado/aircraft/ExperimentalCarrier.mat) to `T135_export/aircraft`. To install the airfoil, copy also [JR001.dat](./Tornado/aircraft/airfoil/JR001.dat) to `T135_export/aircraft/airfoil`.
+
+#### Get Rid of Interp1 Warnings in Tornado
+
+Edit `T135_export\fLattice_setup2.m` and replace in calls to `interp1` (4 locations) `cubic` with `pchip`. This will fix the Matlab warning
+```
+Warning: INTERP1(...,'CUBIC') will change in a future release. Use INTERP1(...,'PCHIP') instead. 
+```
+#### Configure the Tornado Installation Directory
+
 Assuming you have installed Tornado under `C:\tornado\T135_export`. Edit [`mainComputeCoefficients.m`](./ExperimentalCarrierSimulink/code/mainComputeCoefficients.m) and [`mainComputeLTIs.m`](./ExperimentalCarrierSimulink/code/mainComputeLTIs.m) in `ExperimentalCarrierSimulink/code` and adjust the `tornado_root_directory` variable definition to point to the Tornado root directory, e.g.:
 ```
 tornado_root_directory = 'C:\tornado\T135_export';
 ```
-
 You can now run the simulation. Jump [here](#applications) to see how, or continue reading to learn about the airframe and the relevant reference frames first.
 
 ## <a name="airframe"></a>Airframe
