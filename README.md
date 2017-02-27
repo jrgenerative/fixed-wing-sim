@@ -45,7 +45,7 @@ Download Tornado [here](http://tornado.redhammer.se/index.php/download) and unzi
 
 #### Install the Airframe and Airfoil Definitions
 
-To install the airframe definition, copy [ExperimentalCarrier.mat](./Tornado/aircraft/ExperimentalCarrier.mat) to `T135_export/aircraft`. To install the airfoil, copy also [JR001.dat](./Tornado/aircraft/airfoil/JR001.dat) to `T135_export/aircraft/airfoil`.
+To install the airframe definition, copy [ExperimentalCarrier.mat](./Tornado/aircraft/ExperimentalCarrier.mat) to `T135_export/aircraft`. To install the airfoil, copy also [JR001.dat](./Tornado/aircraft/airfoil/JR001.DAT) to `T135_export/aircraft/airfoil`.
 
 #### Get Rid of Interp1 Warnings in Tornado
 
