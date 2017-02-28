@@ -108,9 +108,9 @@ Aerodynamic coefficient matrices are computed by calling the [script](./Experime
 ```
 mainComputeCoefficients.m
 ```
-Results are visualized [here](#coefficient_results). Note, the Simulink models contain pre-computed coefficient matrices, and the result of above script is added [here](./ExperimentalCarrierSimulink/output). So, you don't need to re-compute the coefficients if you just want to to run the simulation or compute the LTIs. 
+Note, the Simulink models contain pre-computed coefficient matrices, and the result of above script is added [here](./ExperimentalCarrierSimulink/output). So, you don't need to re-compute the coefficients if you just want to to run the simulation or compute the LTIs. The resulting matrices are visualized [here](#coefficient_results). 
 
-Input for the calculation is:
+Input to compute the coefficients is:
 
 1. Tornado airframe definition (geometry and airfoil),
 2. center of gravity position
