@@ -108,7 +108,7 @@ Aerodynamic coefficient matrices are computed by calling the [script](./Experime
 ```
 mainComputeCoefficients.m
 ```
-Results are visualized [here](#coefficient_results).
+Results are visualized [here](#coefficient_results). Note, the Simulink models contain pre-computed coefficient matrices, and the result of above script is added [here](./ExperimentalCarrierSimulink/output). So, you don't need to re-compute the coefficients if you just want to to run the simulation or compute the LTIs. 
 
 Input for the calculation is:
 
