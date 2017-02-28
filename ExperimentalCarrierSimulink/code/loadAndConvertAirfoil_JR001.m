@@ -18,7 +18,7 @@
 % @
 
 dirOfScript = fileparts(mfilename('fullpath'));
-airfoilCoords = importdata([dirOfScript '/../../airfoil/JR001.dat']);
+airfoilCoords = importdata([dirOfScript '/../../airfoil/JR001_ORIG.dat']);
 airfoilCoords = airfoilCoords(:, [1 2]);
 
 upperX = airfoilCoords(1:44,1); 
